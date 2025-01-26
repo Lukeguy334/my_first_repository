@@ -30,4 +30,8 @@ let customers = [
     let newCustomer = {name: "Jack Doe", email: "Jackdoe@gmail.com", purchaseAmount: 250};
     console.log("Customer database:", customers);
 
+    ondragover.calculateDiscount = function (discountRate) {
+        return this.amount * discountRate;
+    };
+    console.log("Discount (20%):", ondragover.calculateDiscount(0.2));
     
