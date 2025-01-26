@@ -23,3 +23,7 @@ accountBalance *= 1.05;
 console.log("After interest: $" + accountBalance.toFixed(2));
 accountBalance /=2;
 console.log("After half: $" + accountBalance.toFixed(2));
+
+let customerName = "Jane Doe";
+let welcomeMessage = "Welcome, " + customerName + "!";
+console.log(welcomeMessage);
