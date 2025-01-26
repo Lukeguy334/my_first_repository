@@ -13,3 +13,13 @@ var isAvalible = true;
 console.log("Wireless Headphones", productName, "| Type;", typeof productName);
 console.log("59.99", productPrice, "| Type;", typeof productPrice);
 console.log("true", isAvalible, "| Type;", typeof isAvalible);
+
+let accountBalance = 1000;
+accountBalance += 500;
+console.log("After deposit: $" + accountBalance);
+accountBalance -=200;
+console.log("After withdrawal: $" + accountBalance);
+accountBalance *= 1.05;
+console.log("After interest: $" + accountBalance.toFixed(2));
+accountBalance /=2;
+console.log("After half: $" + accountBalance.toFixed(2));
