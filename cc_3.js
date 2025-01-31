@@ -33,3 +33,14 @@ let feedback = [
 feedback.push = {customerName: "Lucas Silva", feedbackText: "Very satisfied.", rating: 10};
 console.log("Customer Feedback:", feedback);
 
+// logging inventory
+let inventory = {
+    itemName: "Wireless Headphones",
+    stockCount: 25,
+    price: 50,
+};
+inventory.calculateTotalValue = function () {
+    return this.stockCount * this.price;
+};
+console.log("Total Inventory Value:", inventory.calculateTotalValue()); // 1250
+console.log("Inventory Record:", inventory);
