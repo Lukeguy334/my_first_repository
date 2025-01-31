@@ -23,3 +23,13 @@ employee.performanceScore = 98; // update performance score
 employee.isTerminated = false; // add boolean to employee record
 console.log("Updated Employee Record:", employee);
 
+// customer database
+let feedback = [
+    {customerName: "Helen Lachapelle", feedbackText: "Great job!", rating: 9},
+    {customerName: "Wyatt Lachapelle", feedbackText: "Needs improvement.", rating: 6},
+    {customerName: "Sterling Silva", feedbackText: "Excellent work!", rating: 8}
+];
+// add new feedback to database
+feedback.push = {customerName: "Lucas Silva", feedbackText: "Very satisfied.", rating: 10};
+console.log("Customer Feedback:", feedback);
+
