@@ -11,3 +11,15 @@ let totalStock = Instock.reduce((sum, num) => sum + num, 0);
 console.log("Updated Stock:", Instock);
 console.log("Total Stock:", totalStock); // total stock 120
 
+
+// employee tracking data
+let employee = {
+    name: "Helen Lachapelle",
+    role: "Manager",
+    performanceScore: 96,
+    isActive: true
+};
+employee.performanceScore = 98; // update performance score
+employee.isTerminated = false; // add boolean to employee record
+console.log("Updated Employee Record:", employee);
+
