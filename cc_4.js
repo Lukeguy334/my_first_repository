@@ -40,9 +40,14 @@ for (let key in employee) {
     console.log(`${key}: ${employee[key]}`); // print employee info
     }
 
-//Product listings
+// Product listings
 let products = ["Laptop", "Tablet", "Smartphone", "Smartwatch"];
 for (let product of products) {
     console.log(`Product: ${product}`); // print product
 }
 
+// Order tracking
+let orders = [101, 102, 103, 104, 105];
+orders.forEach(order => {
+    console.log(`Order Number: ${order}`); // print order number
+});
