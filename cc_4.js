@@ -68,3 +68,11 @@ function applyDiscount(price, discount) {
     return newPrice;
 }
 console.log(`Price after 20% discount: $${applyDiscount(100, 20)}`); // Price after 20% discount: $80
+
+// Loyalty Points
+const calculatePoints = (amount) => {
+    return Math.floor(amount / 10); // 1 point for every $10
+};
+let amount = 135; // set amount
+let points = calculatePoints(amount);
+console.log(`Customer earned ${points} points for a purchase of $${amount}.`); // Customer earned 13 points for a purchase of $135.
