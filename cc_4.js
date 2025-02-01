@@ -51,3 +51,13 @@ let orders = [101, 102, 103, 104, 105];
 orders.forEach(order => {
     console.log(`Order Number: ${order}`); // print order number
 });
+
+// Calculate Tax
+function calculateTax(amount, taxRate) {
+    let tax = amount * (taxRate / 100);
+    return tax;
+}
+let amount = 150; //set amount and tax rate
+let taxRate = 8;
+let tax = calculateTax(amount, taxRate);
+console.log(`Tax on $${amount} at a rate of ${taxRate}% is $${tax}.`); 
