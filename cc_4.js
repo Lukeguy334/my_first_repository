@@ -53,14 +53,14 @@ orders.forEach(order => {
 });
 
 // Calculate Tax
-function calculateTax(amount, taxRate) {
-    let tax = amount * (taxRate / 100);
+function calculateTax(taxamount, taxRate) {
+    let tax = taxamount * (taxRate / 100);
     return tax;
 }
-let amount = 150; //set amount and tax rate
+let taxamount = 150; //set amount and tax rate
 let taxRate = 8;
-let tax = calculateTax(amount, taxRate);
-console.log(`Tax on $${amount} at a rate of ${taxRate}% is $${tax}.`); 
+let tax = calculateTax(taxamount, taxRate);
+console.log(`Tax on $${taxamount} at a rate of ${taxRate}% is $${tax}.`); 
 
 // Discount Application
 function applyDiscount(price, discount) {
@@ -70,9 +70,9 @@ function applyDiscount(price, discount) {
 console.log(`Price after 20% discount: $${applyDiscount(100, 20)}`); // Price after 20% discount: $80
 
 // Loyalty Points
-const calculatePoints = (amount) => {
-    return Math.floor(amount / 10); // 1 point for every $10
+const calculatePoints = (pointAmount) => {
+    return Math.floor(pointAmount / 10); // 1 point for every $10
 };
-let amount = 135; // set amount
-let points = calculatePoints(amount);
-console.log(`Customer earned ${points} points for a purchase of $${amount}.`); // Customer earned 13 points for a purchase of $135.
+let pointAmount = 135; // set pointAmount
+let points = calculatePoints(pointAmount);
+console.log(`Customer earned ${points} points for a purchase of $${pointAmount}.`); // Customer earned 13 points for a purchase of $135.
