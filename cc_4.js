@@ -14,3 +14,10 @@ for (let i = 0; i < sales.length; i++) { // calculating total sales
 }
 console.log("Updated Sales:", sales);
 console.log("Total Sales:", totalSales); // 500
+
+let stock = 10;
+while (stock > 0) { // decrease stock
+    console.log(`Stock Remaining: ${stock}`);
+    stock--;
+}
+console.log("Out of Stock!"); // Out of Stock!
