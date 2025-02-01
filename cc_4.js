@@ -21,3 +21,11 @@ while (stock > 0) { // decrease stock
     stock--;
 }
 console.log("Out of Stock!"); // Out of Stock!
+
+// Customer survey
+let responses = 0
+do {
+    console.log(`Survey Responses: ${responses}`);
+    responses++;
+} while (responses <3);
+console.log("Survey Complete!"); // Survey Complete!
