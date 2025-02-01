@@ -32,7 +32,7 @@ console.log("Survey Complete!"); // Survey Complete!
 
 //employee information
 let employee = {
-    name: "Cameron Watts",
+    name: "Kendrick Roseburr",
     role: "Manager",
     salary: 100000
 };
