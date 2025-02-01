@@ -30,13 +30,19 @@ do {
 } while (responses <3);
 console.log("Survey Complete!"); // Survey Complete!
 
+//employee information
 let employee = {
     name: "Cameron Watts",
     role: "Manager",
     salary: 100000
 };
 for (let key in employee) {
-    console.log(`${key}: ${employee[key]}`);
+    console.log(`${key}: ${employee[key]}`); // print employee info
     }
 
-    
+//Product listings
+let products = ["Laptop", "Tablet", "Smartphone", "Smartwatch"];
+for (let product of products) {
+    console.log(`Product: ${product}`); // print product
+}
+
