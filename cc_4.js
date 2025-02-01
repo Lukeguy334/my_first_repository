@@ -29,3 +29,14 @@ do {
     responses++;
 } while (responses <3);
 console.log("Survey Complete!"); // Survey Complete!
+
+let employee = {
+    name: "Cameron Watts",
+    role: "Manager",
+    salary: 100000
+};
+for (let key in employee) {
+    console.log(`${key}: ${employee[key]}`);
+    }
+
+    
