@@ -61,3 +61,10 @@ let amount = 150; //set amount and tax rate
 let taxRate = 8;
 let tax = calculateTax(amount, taxRate);
 console.log(`Tax on $${amount} at a rate of ${taxRate}% is $${tax}.`); 
+
+// Discount Application
+function applyDiscount(price, discount) {
+    let newPrice = price - (price * (discount / 100));
+    return newPrice;
+}
+console.log(`Price after 20% discount: $${applyDiscount(100, 20)}`); // Price after 20% discount: $80
